@@ -107,7 +107,7 @@ Supported script types: Business Rules, Script Includes, Client Scripts, UI Acti
 
 ## Privacy
 
-Scripts sent through an AI assistant are analyzed and the result is returned to the assistant. **Nothing is stored in the NowFixer database.** Scripts are processed by Google's Gemini model through the Lovable AI Gateway. Requests to `mcp.nowfixer.dev` pass through Vercel, which forwards them to the NowFixer analyzer.
+Scripts sent through an AI assistant are analyzed and the result is returned to the assistant. **Nothing is stored in the NowFixer database.** Scripts are processed by OpenAI's GPT-5.5 model through the Lovable AI Gateway, with Google's Gemini model used as an automatic fallback if OpenAI is unavailable. Requests to `mcp.nowfixer.dev` pass through Vercel, which forwards them to the NowFixer analyzer.
 
 Don't include passwords, API keys, credentials or customer data in scripts.
 
